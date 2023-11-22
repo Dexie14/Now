@@ -1,0 +1,10 @@
+
+.break{
+    width: 83vw;
+}
+
+@media (max-width: 768px){
+    .break{
+        width: 100vw;
+    }
+ }
