@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import Logo from "../assets/logo.svg";
 import { NavLink } from "react-router-dom";
 
 import { useState } from "react";
 import { SlArrowDown, SlArrowRight } from "react-icons/sl";
 
-const SideBar = () => {
+const SideBar = ({ close, setOpen }) => {
   const [employee, setEmployee] = useState(false);
   const [pay, setPay] = useState(false);
   const [receive, setReceive] = useState(false);
@@ -12,7 +13,15 @@ const SideBar = () => {
   return (
     <div className="d-flex justify-content-between flex-column min-vh-100">
       <section>
-        <div className="d-flex justify-content-center align-content-center my-3">
+        <div className="d-flex flex-column  justify-content-center align-items-center my-3">
+          {close && (
+            <button
+              type="button"
+              className="btn-close pt-3 flex justify-content-center"
+              aria-label="Close"
+              onClick={() => setOpen(false)}
+            ></button>
+          )}
           <img src={Logo} alt="Logo" className="w-75" />
         </div>
         <hr className="" />
@@ -146,7 +155,7 @@ const SideBar = () => {
       </section>
 
       <section className="">
-        <hr/>
+        <hr />
         <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2">
           <span
             className=""
