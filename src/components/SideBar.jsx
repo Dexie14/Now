@@ -6,7 +6,7 @@ import { useState } from "react";
 import { SlArrowDown, SlArrowRight } from "react-icons/sl";
 
 const SideBar = ({ close, setOpen }) => {
-  const [employee, setEmployee] = useState(false);
+  const [employee, setEmployee] = useState(true);
   const [pay, setPay] = useState(false);
   const [receive, setReceive] = useState(false);
 
@@ -27,7 +27,7 @@ const SideBar = ({ close, setOpen }) => {
         <hr className="" />
 
         <section className="mt-4">
-          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2">
+          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2" to="/">
             <span
               className=""
               style={{
@@ -39,7 +39,7 @@ const SideBar = ({ close, setOpen }) => {
             ></span>
             <p className="mb-0">Dashboard</p>
           </NavLink>
-          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2 ">
+          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2">
             <span
               className=""
               style={{
@@ -139,7 +139,7 @@ const SideBar = ({ close, setOpen }) => {
               <p className="px-1">Modify Permission</p>
             </div>
           )}
-          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2">
+          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2"to="/form">
             <span
               className=""
               style={{

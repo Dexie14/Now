@@ -48,7 +48,7 @@ const DashboardLayout = () => {
         <Outlet />
         </div>
         </div>
-        <p className="text-center w-75 mx-auto mb-0">Copyright 2022 NowNow All Rights Reserved. <span style={{color:"#5ab5f8"}}>Privacy-Policy Terms of Use</span></p>
+        <p className="text-center w-75 mx-auto mb-1">Copyright 2022 NowNow All Rights Reserved. <span style={{color:"#5ab5f8"}}>Privacy-Policy Terms of Use</span></p>
       </div>
     </div>
   );
