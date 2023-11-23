@@ -39,7 +39,7 @@ const SideBar = ({ close, setOpen }) => {
             ></span>
             <p className="mb-0">Dashboard</p>
           </NavLink>
-          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2">
+          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2" to="/form">
             <span
               className=""
               style={{
@@ -51,7 +51,7 @@ const SideBar = ({ close, setOpen }) => {
             ></span>
             <p className="mb-0">Reports</p>
           </NavLink>
-          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2">
+          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2" to="/table">
             <span
               className=""
               style={{
@@ -139,7 +139,7 @@ const SideBar = ({ close, setOpen }) => {
               <p className="px-1">Modify Permission</p>
             </div>
           )}
-          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2"to="/form">
+          <NavLink className="d-flex gap-2 align-items-center mb-3 text-decoration-none text-black px-2" to="/form">
             <span
               className=""
               style={{
