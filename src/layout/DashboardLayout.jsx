@@ -39,14 +39,16 @@ const DashboardLayout = () => {
 }
       
       <div
-        className="break d-flex flex-column justify-content-between "
+        className="break d-flex flex-column justify-content-between overflow-y-scroll "
         style={{height: "100vh", background: "#f7f7f7" }}
       >
         <div>
         <Navbar setOpen={setOpen}/>
+        <div className="">
         <Outlet />
         </div>
-        <p className="text-center">Copyright 2022 NowNow All Rights Reserved. <span style={{color:"#5ab5f8"}}>Privacy-Policy Terms of Use</span></p>
+        </div>
+        <p className="text-center w-75 mx-auto mb-0">Copyright 2022 NowNow All Rights Reserved. <span style={{color:"#5ab5f8"}}>Privacy-Policy Terms of Use</span></p>
       </div>
     </div>
   );
