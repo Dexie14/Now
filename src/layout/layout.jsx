@@ -31,6 +31,7 @@ const DashboardLayout = () => {
         style={{
           width: "50vw",
           height: "100vh",
+          zIndex:100,
           boxShadow: "7px 1px 12px -1px rgba(64,61,61,0.67)",
         }}
       >
