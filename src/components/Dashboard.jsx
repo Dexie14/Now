@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <div className="ps-4 pe-5 py-4">
       <h6 className="fw-bold">NIBSS</h6>
-      <section className="d-md-flex ">
+      <section className="d-md-flex">
         <div className="col-md-5 col-12 mb-2 mb-md-0 ">
           <p className="fw-normal mb-0">Bank Account Number : 0001631199</p>
           <p className="fw-normal d-flex align-items-center gap-2">
