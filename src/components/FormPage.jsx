@@ -6,7 +6,6 @@ const FormPage = () => {
   const [selectedFiles, setSelectedFiles] = useState("");
 
   const handleFileChange = (event) => {
-    // console.log(event.target.files, "event");
     const file = event.target.files[0];
     setSelectedFile(file);
   };
@@ -15,7 +14,6 @@ const FormPage = () => {
     setSelectedFile(null);
   };
   const handleFileChanges = (event) => {
-    // console.log(event.target.files, "event");
     const file = event.target.files[0];
     setSelectedFiles(file);
   };

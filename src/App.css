@@ -7,3 +7,20 @@
 p{
   font-size: 14px;
 }
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: white !important;
+  background-color: #f3a020 !important;
+}
+.page-link {
+  z-index: 3;
+  color: #f6ca7f !important;
+  background-color: transparent !important;
+  border-color: #f6ca7f !important;
+}
+
+
+.page-item:nth-of-type(1) .page-link {
+  color: grey !important;
+}
