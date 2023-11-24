@@ -13,9 +13,9 @@ function App() {
       <Routes>
       <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
-          <Route path="home" element={<Dashboard />} />
-          <Route path="form" element={<FormPage />} />
-          <Route path="table" element={<TablePage />} />
+          <Route path="/home" element={<Dashboard />} />
+          <Route path="/form" element={<FormPage />} />
+          <Route path="/table" element={<TablePage />} />
         </Route>
       </Routes>
     </>
