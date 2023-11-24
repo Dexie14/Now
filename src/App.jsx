@@ -1,10 +1,10 @@
 
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import DashboardLayout from "./layout/dashboardLayout";
 import Dashboard from "./components/Dashboard";
 import FormPage from "./components/FormPage";
 import TablePage from "./components/TablePage";
+import DashboardLayout from "./layout/dashboardLayout";
 
 function App() {
 
